@@ -22,10 +22,6 @@ const checkBtn = element => {
     }
 }
 
-const winnerBackground = winner => {
-
-}
-
 const checkWinner = (player1, player2) => {
     let winner;
 
