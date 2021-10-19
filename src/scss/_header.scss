@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto 0 auto;
+    width: 80%;
+    max-width: 90rem;
+    border: 3px solid $header-outline;
+    border-radius: 1.7rem;
+    padding: 2rem 2.5rem;
+
+    @include respond(breakpoint4){
+        width: 90%;
+    }
+
+    &__div{
+
+        &--h1{
+            line-height: 80%;
+        }
+
+        &__score-text{
+            color: $score-text;
+            letter-spacing: 2px;
+            font-size: 1.7rem;
+        }
+        &__score-value{
+            font-size: 7rem;
+            color: $dark-text;
+            font-weight: 700;
+        }
+        &--1{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-left: 1rem;
+        }
+        &--2{
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 1.5rem 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}

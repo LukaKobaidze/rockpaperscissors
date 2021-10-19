@@ -1,0 +1,64 @@
+@import "mixins";
+@import "variables";
+@import "header";
+@import "game";
+@import "rules";
+@import "answer";
+@import "animations";
+
+html{
+    font-size: 62.5%;
+    overflow-y: hidden;
+
+    @include respond(breakpoint1){
+        font-size: 58.5%;
+    }
+    @include respond(breakpoint2){
+        font-size: 54%;
+    }
+    @include respond(breakpoint4){
+        font-size: 47%;
+    }
+    @include respond(breakpoint5){
+        font-size: 40%;
+    }
+    @include respond(breakpoint6){
+        font-size: 34%;
+    }
+    
+    
+}
+body,
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-size: 1.6rem;
+    background-image: radial-gradient(circle at center top, $background-1, $background-2);
+    font-family: $font-main;
+}
+.hidden{
+    display: none;
+}
+.btn{
+    border: 2px solid rgb(219, 219, 219);
+    padding: 1.2rem 4.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+    &:hover{
+        background: #fff;
+        color: $background-2;
+    }
+
+    @include respond(breakpoint5){
+        border: 1px solid rgb(219, 219, 219);
+        border-radius: .9rem;
+        padding: 1.5rem 5rem;
+    }
+}

@@ -1,0 +1,113 @@
+.answer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0 auto;
+    height: 40rem;
+    width: 75rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+    transition: 0.5s;
+    align-items: flex-end;
+    
+    @include respond(breakpoint3){
+        top: 45%;
+        width: 65rem;
+
+    }
+    @include respond(breakpoint4){
+        top: 40%;
+        
+    }
+    @include respond(breakpoint5){
+        width: 95%;
+    }
+    
+    &--win-width{
+        width: 115rem;
+
+        @include respond(breakpoint1){
+            width: 85%;
+        }
+        @include respond(breakpoint3) {
+            width: 65rem;
+        }
+        @include respond(breakpoint5){
+            width: 95%;
+            max-width: 70rem;
+        }
+    }
+
+    &__div{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, .15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1.4);
+        
+    }
+    &--1, &--2{
+        width: 30.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-size: 2.5rem;
+        letter-spacing: .5rem;
+        height: 100%;
+
+        @include respond(breakpoint3){
+            flex-direction: column-reverse;
+            transform: scale(0.8);
+        }
+    }
+
+
+}
+.winner{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 16.5rem;
+    margin-bottom: 7rem;
+    width: 31rem;
+
+    @include respond(breakpoint3){
+        top: 80%;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    @include respond(breakpoint4){
+        transform: translate(-50%, -50%) scale(1.4);
+        top: 75%;
+    }
+    @include respond(breakpoint5){
+        transform: translate(-50%, -50%) scale(1.7);
+    }
+    &--text{
+        color: #fff;
+        font-size: 7rem;
+        
+    }
+    &--btn{
+        background: none;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        font-size: 1.4rem;
+        height: 5.5rem;
+        width: 26.5rem;
+
+    
+    }
+}

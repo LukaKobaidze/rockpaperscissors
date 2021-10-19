@@ -1,0 +1,41 @@
+@mixin respond($breakpoint){
+    @if $breakpoint == breakpoint1 {
+        @media screen and (max-width: 84.375em) { @content }; // 1350px
+    }
+    @if $breakpoint == breakpoint2 {
+        @media screen and (max-width: 71.875em) { @content }; // 1150px
+    }
+    @if $breakpoint == breakpoint3 {
+        @media screen and (max-width: 62.5em) { @content }; // 1000px
+    }
+    @if $breakpoint == breakpoint4 {
+        @media screen and (max-width: 50em) { @content }; // 800px
+    }
+    @if $breakpoint == breakpoint5 {
+        @media screen and (max-width: 37.5em) { @content }; // 600px
+    }
+    @if $breakpoint == breakpoint6 {
+        @media screen and (max-width: 27.1875em) { @content }; // 435px
+    }
+}
+
+@mixin winning-animation($size){
+    @keyframes winner-background{
+        0%{
+            box-shadow: 0 0 0 0px;
+        }
+        33%{
+            box-shadow: 0 .75rem 0 $size rgba(255, 255, 255, 0.04);
+        }
+        66%{
+            box-shadow: 0 .75rem 0 $size rgba(255, 255, 255, 0.04),
+                        0 .75rem 0 ($size * 2 + 2rem) rgba(255, 255, 255, 0.03);
+        }
+        100%{
+            box-shadow: 0 .75rem 0 $size rgba(255, 255, 255, 0.04),
+                        0 .75rem 0 ($size * 2 + 2rem) rgba(255, 255, 255, 0.03),
+                        0 .75rem 0 ($size * 3 + 4rem) rgba(255, 255, 255, 0.02);
+        }
+
+    }
+}
