@@ -24,4 +24,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@LukaaaK](https://www.frontendmentor.io/profile/LukaaaK)
+- Frontend Mentor - [@LukaKobaidze](https://www.frontendmentor.io/profile/LukaKobaidze)
